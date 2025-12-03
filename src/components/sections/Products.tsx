@@ -64,16 +64,16 @@ export function Products() {
           {products.map((product) => (
             <div
               key={product.name}
-              className={`rounded-3xl border-4 ${product.border} bg-gradient-to-br ${product.gradient} p-8 shadow-lg transition-all hover:shadow-2xl`}
+              className={`flex h-full flex-col rounded-3xl border-4 ${product.border} bg-gradient-to-br ${product.gradient} p-8 shadow-lg transition-all hover:shadow-2xl`}
             >
               <div className="mb-4 text-5xl">{product.emoji}</div>
               <h3 className="mb-3 text-2xl font-black text-slate-900">{product.name}</h3>
               <p className={`mb-3 text-lg font-bold ${product.accent}`}>{product.title}</p>
-              <p className="mb-6 leading-relaxed text-slate-700">{product.description}</p>
+              <p className="mb-6 flex-grow leading-relaxed text-slate-700">{product.description}</p>
               <Link
                 href={product.href}
                 target={product.href.startsWith('http') ? '_blank' : undefined}
-                className="inline-block rounded-xl bg-slate-900 px-6 py-3 font-bold text-white shadow transition-all hover:-translate-y-0.5 hover:shadow-lg"
+                className="inline-block self-start rounded-xl bg-slate-900 px-6 py-3 font-bold text-white shadow transition-all hover:-translate-y-0.5 hover:shadow-lg"
               >
                 {product.ctaLabel}
               </Link>

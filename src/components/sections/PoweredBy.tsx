@@ -20,8 +20,8 @@ export function PoweredBy() {
             All our products are built on ActiveGraph KG — our knowledge graph engine with semantic drift detection,
             multi-tenant architecture, and self-refreshing capabilities.
           </p>
-          <p className="mx-auto mb-6 max-w-2xl text-base text-blue-200">
-            Open source for community use • Enterprise license available for commercial deployments
+          <p className="mx-auto mb-6 text-base text-blue-200">
+            Community Edition (Open Source) • Enterprise License Available
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
-  title: 'AI Revo Labs - AI Products for Startups | VantaHire, EvalMatch & Career LLM | India',
+  title: 'AI Revo Labs - AI Products for Startups | India',
   description:
     'AI product company for startups. VantaHire ATS, EvalMatch hiring platform, Career Guidance LLM — all powered by ActiveGraph KG. 4-8 weeks from idea to MVP.',
   openGraph: {

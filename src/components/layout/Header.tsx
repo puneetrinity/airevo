@@ -36,6 +36,7 @@ export function Header() {
         <Link
           href="https://vantahire.com/recruiter-auth"
           target="_blank"
+          rel="noopener noreferrer"
           className="hidden items-center gap-2 rounded-xl bg-brand-blue px-6 py-3 text-white shadow hover:bg-blue-700 hover:shadow-lg md:inline-flex"
         >
           Try VantaHire Free

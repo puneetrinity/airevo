@@ -42,6 +42,7 @@ export function Hero() {
             <Link
               href="https://vantahire.com/recruiter-auth"
               target="_blank"
+              rel="noopener noreferrer"
               className="rounded-2xl bg-brand-violet px-8 py-4 text-lg font-bold text-white shadow transition-transform hover:scale-105 hover:bg-violet-700 hover:shadow-xl"
             >
               Try VantaHire Free

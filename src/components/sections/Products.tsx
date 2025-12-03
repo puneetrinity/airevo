@@ -78,6 +78,7 @@ export function Products() {
               <Link
                 href={product.href}
                 target={product.href.startsWith('http') ? '_blank' : undefined}
+                rel={product.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                 className="inline-block self-start rounded-xl bg-slate-900 px-6 py-3 font-bold text-white shadow transition-all hover:-translate-y-0.5 hover:shadow-lg"
               >
                 {product.ctaLabel}

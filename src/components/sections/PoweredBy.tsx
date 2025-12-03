@@ -28,6 +28,7 @@ export function PoweredBy() {
             <Link
               href="https://puneetrinity.github.io/active-graph-kg/"
               target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 font-bold text-blue-900 transition-all hover:-translate-y-0.5 hover:bg-blue-50"
             >
               View Docs →
@@ -35,6 +36,7 @@ export function PoweredBy() {
             <Link
               href="https://github.com/puneetrinity/active-graph-kg.git"
               target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-xl bg-blue-700 px-6 py-3 font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-blue-600"
             >
               GitHub →

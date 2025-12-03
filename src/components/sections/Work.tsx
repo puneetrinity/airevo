@@ -119,6 +119,7 @@ export function Work() {
                 <Link
                   href={project.link.href}
                   target={project.link.external ? '_blank' : undefined}
+                  rel={project.link.external ? 'noopener noreferrer' : undefined}
                   className="text-sm font-bold text-brand-blue transition-colors hover:text-blue-700"
                 >
                   {project.link.label}

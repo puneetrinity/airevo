@@ -9,6 +9,7 @@ export function Cta() {
         <Link
           href="https://vantahire.com/recruiter-auth"
           target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-3 rounded-2xl bg-white px-10 py-5 text-xl font-black text-brand-blue transition-all hover:scale-110 hover:shadow-2xl"
         >
           Try VantaHire Free →

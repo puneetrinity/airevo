@@ -26,11 +26,18 @@ export function PoweredBy() {
 
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              href="https://github.com/puneetrinity/active-graph-kg.git"
+              href="https://puneetrinity.github.io/active-graph-kg/"
               target="_blank"
               className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 font-bold text-blue-900 transition-all hover:-translate-y-0.5 hover:bg-blue-50"
             >
-              Community Edition →
+              View Docs →
+            </Link>
+            <Link
+              href="https://github.com/puneetrinity/active-graph-kg.git"
+              target="_blank"
+              className="inline-flex items-center gap-2 rounded-xl bg-blue-700 px-6 py-3 font-bold text-white transition-all hover:-translate-y-0.5 hover:bg-blue-600"
+            >
+              GitHub →
             </Link>
             <Link
               href="mailto:hello@airevolabs.com?subject=ActiveGraph KG Enterprise License"

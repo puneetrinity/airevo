@@ -53,6 +53,7 @@ export function StructuredData() {
         '@type': 'SoftwareSourceCode',
         name: 'ActiveGraph KG',
         codeRepository: 'https://github.com/puneetrinity/active-graph-kg',
+        url: 'https://puneetrinity.github.io/active-graph-kg/',
         programmingLanguage: 'Python',
         description:
           'Knowledge graph engine with semantic drift detection, multi-tenant RLS, and self-refreshing capabilities. Open source community edition; enterprise license available.',

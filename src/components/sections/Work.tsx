@@ -18,7 +18,7 @@ const projects: Project[] = [
     badges: ['FastAPI', 'PostgreSQL', 'pgvector'],
     emoji: '🕸️',
     tagColor: 'bg-blue-100 text-blue-700',
-    link: { href: 'https://github.com/puneetrinity/active-graph-kg.git', label: 'View on GitHub →', external: true },
+    link: { href: 'https://puneetrinity.github.io/active-graph-kg/', label: 'View Docs →', external: true },
   },
   {
     title: 'Career Guidance LLM',

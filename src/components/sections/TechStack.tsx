@@ -1,16 +1,32 @@
+import {
+  Braces,
+  Atom,
+  FileCode2,
+  Zap,
+  Database,
+  Grid3X3,
+  Workflow,
+  Route,
+  SquareStack,
+  Ship,
+  CloudCog,
+  Train,
+} from 'lucide-react';
+import { Icon } from '@/components/icons/Icon';
+
 const stack = [
-  { name: 'Python', emoji: '🐍' },
-  { name: 'React', emoji: '⚛️' },
-  { name: 'TypeScript', emoji: '🔷' },
-  { name: 'FastAPI', emoji: '⚡' },
-  { name: 'PostgreSQL', emoji: '🐘' },
-  { name: 'pgvector', emoji: '🔍' },
-  { name: 'Transformers', emoji: '🤗' },
-  { name: 'LangGraph', emoji: '🦙' },
-  { name: 'Redis', emoji: '📊' },
-  { name: 'Docker', emoji: '🐳' },
-  { name: 'RunPod', emoji: '☁️' },
-  { name: 'Railway', emoji: '🚂' },
+  { name: 'Python', icon: Braces },
+  { name: 'React', icon: Atom },
+  { name: 'TypeScript', icon: FileCode2 },
+  { name: 'FastAPI', icon: Zap },
+  { name: 'PostgreSQL', icon: Database },
+  { name: 'pgvector', icon: Grid3X3 },
+  { name: 'Transformers', icon: Workflow },
+  { name: 'LangGraph', icon: Route },
+  { name: 'Redis', icon: SquareStack },
+  { name: 'Docker', icon: Ship },
+  { name: 'RunPod', icon: CloudCog },
+  { name: 'Railway', icon: Train },
 ];
 
 export function TechStack() {
@@ -28,7 +44,9 @@ export function TechStack() {
               key={item.name}
               className="rounded-xl border-2 border-slate-200 bg-slate-50 p-4 text-center transition-colors hover:border-brand-blue hover:bg-blue-50"
             >
-              <div className="mb-2 text-3xl">{item.emoji}</div>
+              <div className="mb-2 flex justify-center">
+                <Icon icon={item.icon} size={26} className="text-slate-800" />
+              </div>
               <div className="font-bold text-slate-900">{item.name}</div>
             </div>
           ))}

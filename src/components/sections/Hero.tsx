@@ -1,12 +1,14 @@
 'use client';
 
 import Link from 'next/link';
+import { Rocket, Users, BriefcaseBusiness, Code2, Zap } from 'lucide-react';
+import { Icon } from '@/components/icons/Icon';
 
 const stats = [
-  { label: 'AI Products Live', value: '3', bg: 'bg-brand-teal' },
-  { label: 'Candidates Evaluated', value: '10K+', bg: 'bg-brand-blue' },
-  { label: 'Startups Hiring Smarter', value: '250+', bg: 'bg-brand-pink' },
-  { label: 'Open Source Core', value: '100%', bg: 'bg-brand-orange' },
+  { label: 'AI Products Live', value: '3', bg: 'bg-brand-teal', icon: Rocket },
+  { label: 'Candidates Evaluated', value: '10K+', bg: 'bg-brand-blue', icon: Users },
+  { label: 'Startups Hiring Smarter', value: '250+', bg: 'bg-brand-pink', icon: BriefcaseBusiness },
+  { label: 'Open Source Core', value: '100%', bg: 'bg-brand-orange', icon: Code2 },
 ];
 
 export function Hero() {
@@ -15,7 +17,8 @@ export function Hero() {
       <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="mb-8 inline-flex items-center gap-2 rounded-full bg-brand-teal px-5 py-2.5 text-sm font-bold text-white">
-            ⚡ AI Products for Startups • India
+            <Icon icon={Zap} size={18} className="text-white" />
+            AI Products for Startups • India
           </div>
 
           <h1 className="mb-8 text-5xl font-black leading-tight text-slate-900 sm:text-6xl lg:text-7xl">
@@ -51,6 +54,9 @@ export function Hero() {
                 key={stat.label}
                 className={`${stat.bg} rounded-2xl p-6 text-center text-white shadow-lg transition-transform hover:scale-105`}
               >
+                <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-white/10">
+                  <Icon icon={stat.icon} size={22} className="text-white" />
+                </div>
                 <div className="mb-2 text-4xl font-black">{stat.value}</div>
                 <div className="text-sm font-bold opacity-90">{stat.label}</div>
               </div>

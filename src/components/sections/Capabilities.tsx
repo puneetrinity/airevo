@@ -1,10 +1,13 @@
+import { Brain, Network, Search, Bot, Workflow, CloudCog } from 'lucide-react';
+import { Icon } from '@/components/icons/Icon';
+
 const capabilities = [
-  { title: 'LLM Fine-Tuning', description: 'Custom fine-tuning with rapid deployment', emoji: '🧠', border: 'border-green-500', gradient: 'from-green-500 to-green-600' },
-  { title: 'Knowledge Graphs', description: 'Self-refreshing with drift detection', emoji: '🕸️', border: 'border-blue-500', gradient: 'from-blue-500 to-blue-600' },
-  { title: 'AI Search', description: 'Hybrid vector + keyword search', emoji: '🔍', border: 'border-pink-500', gradient: 'from-pink-500 to-pink-600' },
-  { title: 'Recruitment AI', description: 'Bias-aware matching & automation', emoji: '🤖', border: 'border-violet-500', gradient: 'from-violet-500 to-violet-600' },
-  { title: 'Data Pipelines', description: 'Scalable ETL with monitoring', emoji: '💾', border: 'border-orange-500', gradient: 'from-orange-500 to-orange-600' },
-  { title: 'MLOps', description: 'Deployment with optimization', emoji: '☁️', border: 'border-purple-500', gradient: 'from-purple-500 to-purple-600' },
+  { title: 'LLM Fine-Tuning', description: 'Custom fine-tuning with rapid deployment', icon: Brain, border: 'border-green-500', gradient: 'from-green-500 to-green-600' },
+  { title: 'Knowledge Graphs', description: 'Self-refreshing with drift detection', icon: Network, border: 'border-blue-500', gradient: 'from-blue-500 to-blue-600' },
+  { title: 'AI Search', description: 'Hybrid vector + keyword search', icon: Search, border: 'border-pink-500', gradient: 'from-pink-500 to-pink-600' },
+  { title: 'Recruitment AI', description: 'Bias-aware matching & automation', icon: Bot, border: 'border-violet-500', gradient: 'from-violet-500 to-violet-600' },
+  { title: 'Data Pipelines', description: 'Scalable ETL with monitoring', icon: Workflow, border: 'border-orange-500', gradient: 'from-orange-500 to-orange-600' },
+  { title: 'MLOps', description: 'Deployment with optimization', icon: CloudCog, border: 'border-purple-500', gradient: 'from-purple-500 to-purple-600' },
 ];
 
 export function Capabilities() {
@@ -23,7 +26,7 @@ export function Capabilities() {
               className={`relative z-10 rounded-2xl border-4 ${capability.border} bg-white p-6 shadow-card transition-transform hover:-translate-y-1`}
             >
               <div className={`mb-4 inline-flex rounded-xl bg-gradient-to-br ${capability.gradient} p-4`}>
-                <span className="text-3xl text-white">{capability.emoji}</span>
+                <Icon icon={capability.icon} size={28} className="text-white" />
               </div>
               <h3 className="mb-2 text-xl font-bold text-slate-900">{capability.title}</h3>
               <p className="text-slate-600">{capability.description}</p>

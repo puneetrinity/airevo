@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import type { LucideIcon } from 'lucide-react';
+import { Building2, Bot, Brain } from 'lucide-react';
+import { Icon } from '@/components/icons/Icon';
 
 type Product = {
   name: string;
@@ -7,7 +10,7 @@ type Product = {
   href: string;
   gradient: string;
   border: string;
-  emoji: string;
+  icon: LucideIcon;
   accent: string;
   ctaLabel: string;
 };
@@ -21,7 +24,7 @@ const products: Product[] = [
     href: 'https://vantahire.com/recruiter-auth',
     gradient: 'from-purple-50 to-purple-100',
     border: 'border-purple-500',
-    emoji: '🏢',
+    icon: Building2,
     accent: 'text-purple-700',
     ctaLabel: 'Try VantaHire Free →',
   },
@@ -33,7 +36,7 @@ const products: Product[] = [
     href: 'https://evalmatch.app',
     gradient: 'from-orange-50 to-orange-100',
     border: 'border-orange-500',
-    emoji: '🤖',
+    icon: Bot,
     accent: 'text-orange-700',
     ctaLabel: 'Explore EvalMatch →',
   },
@@ -45,7 +48,7 @@ const products: Product[] = [
     href: 'mailto:hello@airevolabs.com?subject=Career LLM Early Access',
     gradient: 'from-green-50 to-green-100',
     border: 'border-green-500',
-    emoji: '🧠',
+    icon: Brain,
     accent: 'text-green-700',
     ctaLabel: 'Request Early Access →',
   },
@@ -66,7 +69,9 @@ export function Products() {
               key={product.name}
               className={`flex h-full flex-col rounded-3xl border-4 ${product.border} bg-gradient-to-br ${product.gradient} p-8 shadow-lg transition-all hover:shadow-2xl`}
             >
-              <div className="mb-4 text-5xl">{product.emoji}</div>
+              <div className="mb-4 inline-flex rounded-2xl bg-white/60 p-3 text-slate-900">
+                <Icon icon={product.icon} size={32} />
+              </div>
               <h3 className="mb-3 text-2xl font-black text-slate-900">{product.name}</h3>
               <p className={`mb-3 text-lg font-bold ${product.accent}`}>{product.title}</p>
               <p className="mb-6 flex-grow leading-relaxed text-slate-700">{product.description}</p>

@@ -1,11 +1,14 @@
 import Link from 'next/link';
+import type { LucideIcon } from 'lucide-react';
+import { Network, Brain, Search, Radar, Bot, GraduationCap, Building2, FileVideo } from 'lucide-react';
+import { Icon } from '@/components/icons/Icon';
 
 type Project = {
   title: string;
   category: string;
   description: string;
   badges: string[];
-  emoji: string;
+  icon: LucideIcon;
   tagColor: string;
   link?: { href: string; label: string; external?: boolean };
 };
@@ -16,7 +19,7 @@ const projects: Project[] = [
     category: 'Knowledge Graph',
     description: 'Open source knowledge graph engine with semantic drift detection and multi-tenant RLS — powers EvalMatch and VantaHire.',
     badges: ['FastAPI', 'PostgreSQL', 'pgvector'],
-    emoji: '🕸️',
+    icon: Network,
     tagColor: 'bg-blue-100 text-blue-700',
     link: { href: 'https://puneetrinity.github.io/active-graph-kg/', label: 'View Docs →', external: true },
   },
@@ -25,7 +28,7 @@ const projects: Project[] = [
     category: 'LLM Fine-Tuning',
     description: 'Fine-tuned Qwen 2.5 7B for personalized career guidance with vLLM and RunPod serverless.',
     badges: ['Transformers', 'Unsloth', 'RunPod'],
-    emoji: '🧠',
+    icon: Brain,
     tagColor: 'bg-green-100 text-green-700',
   },
   {
@@ -33,7 +36,7 @@ const projects: Project[] = [
     category: 'AI Search',
     description: 'LangGraph-powered local-first search with Ollama integration and hybrid metadata stores.',
     badges: ['LangGraph', 'Redis', 'ClickHouse'],
-    emoji: '🔍',
+    icon: Search,
     tagColor: 'bg-pink-100 text-pink-700',
     link: { href: 'mailto:hello@airevolabs.com?subject=Demo Request - Unified AI Search System', label: 'Connect for Demo →' },
   },
@@ -42,7 +45,7 @@ const projects: Project[] = [
     category: 'Vector Search',
     description: 'Hybrid search with sub-second response using HNSW and PQ indexing algorithms.',
     badges: ['FastAPI', 'Docker', 'HNSW'],
-    emoji: '⚡',
+    icon: Radar,
     tagColor: 'bg-violet-100 text-violet-700',
     link: { href: 'mailto:hello@airevolabs.com?subject=Demo Request - Ideal Octo Goggles', label: 'Connect for Demo →' },
   },
@@ -51,7 +54,7 @@ const projects: Project[] = [
     category: 'Recruitment AI',
     description: 'AI recruitment platform with job matching, resume parsing, and bias detection.',
     badges: ['React', 'FastAPI', 'OpenAI/Groq'],
-    emoji: '🤖',
+    icon: Bot,
     tagColor: 'bg-orange-100 text-orange-700',
     link: { href: 'https://evalmatch.app', label: 'View Live →', external: true },
   },
@@ -60,7 +63,7 @@ const projects: Project[] = [
     category: 'Skills Ontology',
     description: 'Extracts and maps resumes to ESCO skills and competences taxonomy.',
     badges: ['Python', 'NLP', 'FastAPI'],
-    emoji: '🎯',
+    icon: GraduationCap,
     tagColor: 'bg-yellow-100 text-yellow-700',
   },
   {
@@ -68,7 +71,7 @@ const projects: Project[] = [
     category: 'Enterprise',
     description: 'Enterprise recruitment platform with job lifecycle management and ATS integration.',
     badges: ['Node.js', 'TypeScript', 'Railway'],
-    emoji: '🏢',
+    icon: Building2,
     tagColor: 'bg-purple-100 text-purple-700',
     link: { href: 'https://vantahire.com/recruiter-auth', label: 'View Live →', external: true },
   },
@@ -77,7 +80,7 @@ const projects: Project[] = [
     category: 'Document AI',
     description: 'Converts SOP PDFs to a 1-page summary plus 60-second training video with 100% section coverage.',
     badges: ['Claude 3.5', 'PyMuPDF', 'FFmpeg'],
-    emoji: '📄',
+    icon: FileVideo,
     tagColor: 'bg-red-100 text-red-700',
   },
 ];
@@ -98,7 +101,9 @@ export function Work() {
               className="rounded-2xl border-2 border-slate-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:border-brand-blue/70 hover:shadow-xl"
             >
               <div className="mb-4 flex items-start justify-between">
-                <div className="inline-flex rounded-xl bg-slate-100 p-3 text-2xl">{project.emoji}</div>
+                <div className="inline-flex rounded-xl bg-slate-100 p-3 text-2xl">
+                  <Icon icon={project.icon} size={24} className="text-slate-800" />
+                </div>
                 <span className={`rounded-full px-3 py-1 text-xs font-bold ${project.tagColor}`}>{project.category}</span>
               </div>
               <h3 className="mb-2 text-xl font-black text-slate-900">{project.title}</h3>

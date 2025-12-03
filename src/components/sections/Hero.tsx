@@ -11,7 +11,7 @@ const stats = [
 
 export function Hero() {
   return (
-    <section className="overflow-hidden bg-gradient-to-b from-white via-slate-50/50 to-white pb-32 pt-20">
+    <section className="overflow-hidden bg-gradient-to-b from-white via-slate-50/50 to-white pb-16 pt-20">
       <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="mb-8 inline-flex items-center gap-2 rounded-full bg-brand-teal px-5 py-2.5 text-sm font-bold text-white">

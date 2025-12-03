@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function PoweredBy() {
   return (
-    <section className="relative z-10 py-20">
+    <section className="relative z-10 py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="rounded-3xl bg-gradient-to-r from-blue-900 to-blue-800 p-10 text-center text-white shadow-card">
           <div className="mx-auto mb-6 flex w-fit items-center gap-3">

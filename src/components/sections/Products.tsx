@@ -53,7 +53,7 @@ const products: Product[] = [
 
 export function Products() {
   return (
-    <section id="products" className="relative z-10 bg-white py-20">
+    <section id="products" className="relative z-10 bg-white py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-5xl font-black text-slate-900">Our AI Products</h2>

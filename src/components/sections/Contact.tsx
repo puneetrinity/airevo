@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function Contact() {
   return (
-    <section id="contact" className="bg-white py-20">
+    <section id="contact" className="bg-white py-12">
       <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
         <h2 className="mb-6 text-4xl font-black text-slate-900">Get in Touch</h2>
         <p className="mb-8 text-xl text-slate-600">Questions about our products? Want to discuss custom AI solutions?</p>

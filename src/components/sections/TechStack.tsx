@@ -15,7 +15,7 @@ const stack = [
 
 export function TechStack() {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-4xl font-black text-slate-900">Our Tech Stack</h2>

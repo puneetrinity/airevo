@@ -84,7 +84,7 @@ const projects: Project[] = [
 
 export function Work() {
   return (
-    <section id="work" className="relative z-10 bg-slate-50 py-20">
+    <section id="work" className="relative z-10 bg-slate-50 py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-5xl font-black text-slate-900">What We Can Build For You</h2>

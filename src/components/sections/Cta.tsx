@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function Cta() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-violet-900 py-20">
+    <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-violet-900 py-12">
       <div className="relative z-10 mx-auto max-w-5xl px-4 text-center text-white sm:px-6 lg:px-8">
         <h2 className="mb-6 text-5xl font-black">Ready to Hire Smarter?</h2>
         <p className="mb-10 text-2xl opacity-90">Join 250+ startups using our AI products</p>

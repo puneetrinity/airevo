@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-teal: #009b7b;
+  --brand-blue: #2970ff;
+  --brand-pink: #e93a63;
+  --brand-purple: #6c3dce;
+  --brand-orange: #f4a21b;
+  --brand-violet: #8b5cf6;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+}

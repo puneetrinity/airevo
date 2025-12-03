@@ -1,24 +1,32 @@
 {
   "name": "airevo-labs-website",
   "version": "1.0.0",
-  "description": "AI Revo Labs - AI Product Development & LLM Fine-Tuning Services",
-  "main": "server.js",
+  "private": true,
+  "description": "AI Revo Labs - AI Products for Startups",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "lint": "next lint"
   },
-  "keywords": [
-    "AI",
-    "LLM",
-    "Machine Learning",
-    "Product Development"
-  ],
-  "author": "AI Revo Labs",
-  "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2"
+    "next": "14.2.11",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.14",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "autoprefixer": "10.4.20",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.11",
+    "postcss": "8.4.45",
+    "tailwindcss": "3.4.12",
+    "typescript": "5.5.4"
   },
   "engines": {
-    "node": ">=14.0.0"
-  }
+    "node": ">=18.17.0"
+  },
+  "license": "MIT"
 }

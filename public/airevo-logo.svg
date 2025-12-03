@@ -1,0 +1,17 @@
+<svg width="400" height="80" viewBox="0 0 400 80" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Airevo Labs logo">
+  <g>
+    <rect x="0" y="10" width="45" height="60" rx="8" fill="#009B7B" />
+    <text x="22.5" y="40" dy=".35em" text-anchor="middle" fill="white" font-size="32" font-family="sans-serif" font-weight="800">a</text>
+    <rect x="53" y="10" width="45" height="60" rx="8" fill="#2970FF" />
+    <text x="75.5" y="40" dy=".35em" text-anchor="middle" fill="white" font-size="32" font-family="sans-serif" font-weight="800">i</text>
+    <rect x="106" y="10" width="45" height="60" rx="8" fill="#E93A63" />
+    <text x="128.5" y="40" dy=".35em" text-anchor="middle" fill="white" font-size="32" font-family="sans-serif" font-weight="800">r</text>
+    <rect x="159" y="10" width="45" height="60" rx="8" fill="#6C3DCE" />
+    <text x="181.5" y="40" dy=".35em" text-anchor="middle" fill="white" font-size="32" font-family="sans-serif" font-weight="800">e</text>
+    <rect x="212" y="10" width="45" height="60" rx="8" fill="#F4A21B" />
+    <text x="234.5" y="40" dy=".35em" text-anchor="middle" fill="white" font-size="32" font-family="sans-serif" font-weight="800">v</text>
+    <rect x="265" y="10" width="45" height="60" rx="8" fill="#8B5CF6" />
+    <text x="287.5" y="40" dy=".35em" text-anchor="middle" fill="white" font-size="32" font-family="sans-serif" font-weight="800">o</text>
+  </g>
+  <text x="325" y="40" dy=".35em" font-size="20" letter-spacing="0.1em" fill="#0F172A" font-family="sans-serif" font-weight="700">LABS</text>
+</svg>

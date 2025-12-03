@@ -1,0 +1,20 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI Revo Labs Open Graph image">
+  <rect width="1200" height="630" fill="#0F172A"/>
+  <g transform="translate(120,180)">
+    <rect x="0" y="0" width="90" height="140" rx="16" fill="#009B7B" />
+    <text x="45" y="85" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="white">a</text>
+    <rect x="105" y="0" width="90" height="140" rx="16" fill="#2970FF" />
+    <text x="150" y="85" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="white">i</text>
+    <rect x="210" y="0" width="90" height="140" rx="16" fill="#E93A63" />
+    <text x="255" y="85" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="white">r</text>
+    <rect x="315" y="0" width="90" height="140" rx="16" fill="#6C3DCE" />
+    <text x="360" y="85" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="white">e</text>
+    <rect x="420" y="0" width="90" height="140" rx="16" fill="#F4A21B" />
+    <text x="465" y="85" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="white">v</text>
+    <rect x="525" y="0" width="90" height="140" rx="16" fill="#8B5CF6" />
+    <text x="570" y="85" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="white">o</text>
+    <text x="650" y="85" text-anchor="start" font-family="Inter, sans-serif" font-size="48" font-weight="700" letter-spacing="8" fill="#E2E8F0">LABS</text>
+  </g>
+  <text x="120" y="380" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="#E2E8F0">AI Products Built For Startups</text>
+  <text x="120" y="440" font-family="Inter, sans-serif" font-size="28" font-weight="500" fill="#CBD5E1">VantaHire • EvalMatch • Career LLM • Powered by ActiveGraph KG</text>
+</svg>

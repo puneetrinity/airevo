@@ -20,17 +20,17 @@ export const metadata: Metadata = {
     description:
       'AI product company for startups. VantaHire ATS, EvalMatch hiring platform, Career Guidance LLM. Built on ActiveGraph KG (dual license).',
     locale: 'en_IN',
-    images: ['/airevo-logo.svg'],
+    images: ['/og-image.svg'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AI Revo Labs - AI Products for Startups',
     description:
       'AI product company for startups. VantaHire ATS, EvalMatch hiring platform, Career Guidance LLM. Open-source powered.',
-    images: ['/airevo-logo.svg'],
+    images: ['/og-image.svg'],
   },
   icons: {
-    icon: '/favicon.svg',
+    icon: ['/favicon.svg', '/favicon.ico'],
   },
   other: {
     'geo.region': 'IN',
